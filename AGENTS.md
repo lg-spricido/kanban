@@ -11,6 +11,8 @@
 - No more functionality: no archive, no search/filter. Keep it simple.
 - The priority is a slick, professional, gorgeous UI/UX with very simple features
 - The app should open with dummy data populated for the single board
+  - Consider a Brazilian insurance company case for the dummy data and try to already consider what could be a real-world project.
+- Set everything up in Portuguese
 
 ## Technical Details
 
@@ -41,3 +43,4 @@
 1. Use latest versions of libraries and idiomatic approaches as of today
 2. Keep it simple - NEVER over-engineer, ALWAYS simplify, NO unnecessary defensive programming. No extra features - focus on simplicity.
 3. Be concise. Keep README minimal. IMPORTANT: no emojis ever
+
