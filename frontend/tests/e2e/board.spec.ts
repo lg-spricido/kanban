@@ -3,24 +3,24 @@ import { expect, test } from "@playwright/test";
 test("executa o fluxo principal do kanban", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page.getByRole("heading", { name: "Pipeline Kanban da seguradora" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Implementação de Propostas" })).toBeVisible();
   await expect(page.getByTestId("column-captacao")).toBeVisible();
 
   const titleInput = page.getByTestId("column-title-captacao");
-  await titleInput.fill("Prospecção");
+  await titleInput.fill("Originação");
   await titleInput.blur();
-  await expect(titleInput).toHaveValue("Prospecção");
+  await expect(titleInput).toHaveValue("Originação");
 
-  await page.getByTestId("add-card-title-triagem").fill("Seguro Garantia Licitação");
+  await page.getByTestId("add-card-title-triagem").fill("Vida PME Grupo Delta");
   await page
     .getByTestId("add-card-details-triagem")
-    .fill("Conferir edital e prazo de vigência para emissão da proposta.");
+    .fill("Validar número de vidas elegíveis e regra comercial para início em maio.");
   await page.getByTestId("add-card-submit-triagem").click();
 
-  const newCard = page.getByText("Seguro Garantia Licitação");
+  const newCard = page.getByText("Vida PME Grupo Delta");
   await expect(newCard).toBeVisible();
 
-  await page.getByRole("button", { name: "Excluir card Seguro Garantia Licitação" }).click();
+  await page.getByRole("button", { name: "Excluir card Vida PME Grupo Delta" }).click();
   await expect(newCard).toHaveCount(0);
 
   const sourceCard = page.getByTestId("drag-handle-card-captacao-2");
@@ -39,5 +39,5 @@ test("executa o fluxo principal do kanban", async ({ page }) => {
   });
   await page.mouse.up();
 
-  await expect(page.getByTestId("column-triagem")).toContainText("Seguro Empresarial Filial Recife");
+  await expect(page.getByTestId("column-triagem")).toContainText("Prestamista Cooperativa Prisma");
 });

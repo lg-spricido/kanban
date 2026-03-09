@@ -70,7 +70,7 @@ export function BoardColumn({
         </div>
 
         <div className="rounded-full bg-[#032147] px-3 py-1 text-xs font-semibold text-white">
-          {column.cards.length} itens
+          {column.cards.length} propostas
         </div>
       </div>
 
@@ -82,7 +82,7 @@ export function BoardColumn({
 
           {column.cards.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/70 px-4 py-8 text-center text-sm text-slate-400">
-              Arraste um card para esta etapa.
+              Arraste uma proposta para esta etapa.
             </div>
           ) : null}
         </div>
@@ -102,12 +102,12 @@ export function BoardColumn({
       >
         <div>
           <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
-            Novo card
+            Nova proposta
           </label>
           <input
             value={cardTitle}
             onChange={(event) => setCardTitle(event.target.value)}
-            placeholder="Título"
+            placeholder="Conta ou proposta"
             className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#209dd7]"
             data-testid={`add-card-title-${column.id}`}
           />
@@ -116,7 +116,7 @@ export function BoardColumn({
         <textarea
           value={cardDetails}
           onChange={(event) => setCardDetails(event.target.value)}
-          placeholder="Detalhes"
+          placeholder="Resumo comercial"
           rows={3}
           className="w-full resize-none rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#209dd7]"
           data-testid={`add-card-details-${column.id}`}
@@ -128,7 +128,7 @@ export function BoardColumn({
           data-testid={`add-card-submit-${column.id}`}
         >
           <Plus className="h-4 w-4" />
-          Adicionar card
+          Adicionar proposta
         </button>
       </form>
     </section>

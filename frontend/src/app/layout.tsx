@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kanban Comercial",
-  description: "MVP de kanban para acompanhamento de propostas de seguros.",
+  title: "Implementação de Propostas",
+  description: "Painel comercial para acompanhamento de propostas de seguro de vida.",
 };
 
 export default function RootLayout({

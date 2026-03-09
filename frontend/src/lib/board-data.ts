@@ -4,44 +4,49 @@ export const initialBoardState: BoardState = {
   columns: [
     {
       id: "captacao",
-      title: "Captação",
+      title: "Prospecção",
       cards: [
         {
           id: "card-captacao-1",
-          title: "Renovação Auto Frota",
-          details: "Mapear dados da frota da Transportes Horizonte para cotação anual.",
+          title: "Vida em Grupo Nova Aurora",
+          details:
+            "Receber a massa segurável da indústria, validar capital por faixa salarial e confirmar janela comercial para início da vigência.",
         },
         {
           id: "card-captacao-2",
-          title: "Seguro Empresarial Filial Recife",
-          details: "Validar questionário inicial da operação e agendar visita técnica.",
+          title: "Prestamista Cooperativa Prisma",
+          details:
+            "Alinhar escopo do convênio, volume mensal de novos contratos e regra de elegibilidade para adesão automática.",
         },
       ],
     },
     {
       id: "triagem",
-      title: "Triagem",
+      title: "Qualificação",
       cards: [
         {
           id: "card-triagem-1",
-          title: "Vida em Grupo Cooperativa Sul",
-          details: "Conferir relação de vidas e documentação cadastral recebida.",
+          title: "AP Coletivo Rede Humaniza",
+          details:
+            "Conferir CNAE, perfil ocupacional, dispersão geográfica e histórico do corretor antes do envio para precificação.",
         },
       ],
     },
     {
       id: "analise",
-      title: "Análise Técnica",
+      title: "Precificação",
       cards: [
         {
           id: "card-analise-1",
-          title: "RC Profissional Clínica Mais Vida",
-          details: "Revisar histórico de sinistros e limites sugeridos pela subscrição.",
+          title: "Vida Global Tech",
+          details:
+            "Revisar composição etária, capital médio por vida e cláusulas adicionais de invalidez para fechamento da taxa.",
         },
         {
           id: "card-analise-2",
-          title: "Transporte Nacional Cargas",
-          details: "Comparar franquias e cláusulas para a operação interestadual.",
+          title: "Funeral Corporativo Atlas",
+          details:
+            "Comparar rede assistencial, prazo de implantação e custo por titular para apresentar a melhor condição comercial.",
         },
       ],
     },
@@ -51,19 +56,21 @@ export const initialBoardState: BoardState = {
       cards: [
         {
           id: "card-pendencias-1",
-          title: "Patrimonial Rede Solar",
-          details: "Aguardar envio do laudo elétrico e atualização do valor em risco.",
+          title: "Vida em Grupo Clínicas Essencial",
+          details:
+            "Aguardar sinistralidade dos últimos 24 meses e confirmação da convenção coletiva antes da proposta final.",
         },
       ],
     },
     {
       id: "fechamento",
-      title: "Fechamento",
+      title: "Implantação",
       cards: [
         {
           id: "card-fechamento-1",
-          title: "Saúde PME Grupo Atlântico",
-          details: "Condição comercial aprovada e proposta liberada para assinatura.",
+          title: "Vida PME Horizonte Log",
+          details:
+            "Condição aprovada, kit de implantação enviado e cronograma de cadastro das vidas em validação com RH.",
         },
       ],
     },
