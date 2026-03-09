@@ -12,7 +12,7 @@
 - The priority is a slick, professional, gorgeous UI/UX with very simple features
 - The app should open with dummy data populated for the single board
   - Consider a Brazilian insurance company case for the dummy data and try to already consider what could be a real-world project.
-- Set everything up in Portuguese
+- Set everything up in Portuguese BR
 
 ## Technical Details
 
